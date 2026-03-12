@@ -1,0 +1,42 @@
+:root {
+  /* colors */
+  --color-header: rgb(126, 128, 72);
+  --color-footer: rgb(126, 128, 72);
+  --color-secondary-background: rgb(215, 205, 194);
+  --color-cta-green: rgb(126, 128, 72);
+  --color-cta-brown: rgb(159, 99, 70);
+  --color-cta-white: rgb(255, 255, 255);
+  --color-cta-green-hover: rgb(210, 216, 48);
+  --color-cta-brown-hover: rgb(210, 163, 140);
+  --color-cta-white-hover: rgb(215, 205, 194);
+  --text-black: rgb(42, 42, 42);
+  --text-white: rgb(255, 255, 255);
+  --text-green: rgb(126, 128, 72);
+
+  /* textsizes */
+  --h1-size:;
+  --h2-size:;
+  --h3-size:;
+  --p-size:;
+  --p-small-size:;
+  --link-size:;
+  --cta-text-size:;
+
+  /* textstyles */
+  --font-family-hiragino:;
+  --font-family-itim:;
+  --font-family-encode:;
+  --font-weight-light:;
+  --font-weight-medium:;
+  --font-weight-bold:;
+
+  /* borderradius */
+  --border-cta-green:;
+  --border-cta-brown:;
+  --border-cta-white:;
+
+  /* dropshadows */
+  --shadow-cta-green:;
+  --shadow-card:;
+  --shadow-card-hover:;
+}
