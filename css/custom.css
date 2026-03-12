@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "hiragino-kaku-gothic-std";
+  src: url(../fonts/Hiragino\ Kaku\ Gothic\ Std\ W8.woff2);
+}
+:root {
+  /* colors */
+  --color-header: rgb(126, 128, 72);
+  --color-footer: rgb(126, 128, 72);
+  --color-secondary-background: rgb(215, 205, 194);
+  --color-cta-green: rgb(126, 128, 72);
+  --color-cta-brown: rgb(159, 99, 70);
+  --color-cta-white: rgb(255, 255, 255);
+  --color-cta-green-hover: rgb(210, 216, 48);
+  --color-cta-brown-hover: rgb(210, 163, 140);
+  --color-cta-white-hover: rgb(215, 205, 194);
+  --text-black: rgb(42, 42, 42);
+  --text-white: rgb(255, 255, 255);
+  --text-green: rgb(126, 128, 72);
+
+  /* textsizes */
+  --hero-size: clamp(50px, 2vw, 128px);
+  --h1-size: clamp(34px, 2vw, 60px);
+  --h2-size: clamp(30px, 2vw, 56px);
+  --h3-size: clamp(24px, 2vw, 40px);
+  --p-size: clamp(20px, 2vw, 28px);
+  --p-small-size: clamp(16px, 2vw, 22px);
+  --cta-text-size: clamp(40px, 2vw, 64px);
+
+  /* textstyles */
+  --font-family-hiragino: "hiragino-kaku-gothic-std", sans-serif;
+  --font-family-itim: "Itim", cursive;
+  --font-family-encode: "Encode Sans Semi Expanded", sans-serif;
+  --font-weight-light: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
+  --font-weight-thick: 900;
+
+  /* cta sizes */
+  --padding-cta-small: 1rem 1.5rem;
+  --padding-cta-large: 1rem 3.5rem;
+
+  /* borderradius */
+  --border-cta-green: 60px 80px 5px 150px;
+  --border-cta-brown: 80px 80px 50px 50px;
+  --border-cta-white: 40px;
+
+  /* dropshadows */
+  --shadow-cta-green: -4px 5px 10px 0 rgb(217, 223, 58, 0.68);
+  --shadow-card: 0 0 7px 4px rgb(215, 205, 194, 0.59);
+  --shadow-card-hover: 0 0 14px 10px rgb(215, 205, 194, 0.59);
+}
