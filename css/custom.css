@@ -22,9 +22,9 @@
   /* textsizes */
   --hero-size: clamp(50px, 2vw, 128px);
   --h1-size: clamp(34px, 5vw, 60px);
-  --h2-size: clamp(30px, 5vw, 56px);
+  --h2-size: clamp(30px, 5vw, 53px);
   --h3-size: clamp(24px, 2vw, 40px);
-  --p-size: clamp(20px, 2vw, 28px);
+  --p-size: clamp(20px, 2vw, 25px);
   --p-small-size: clamp(16px, 2vw, 22px);
   --cta-text-size: clamp(16px, 2vw, 20px);
 

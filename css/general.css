@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  padding: 2rem 1rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,10 +43,15 @@ p {
   font-size: var(--p-size);
   font-weight: var(--font-weight-light);
   color: var(--text-black);
+  line-height: 150%;
 }
 
 .p-small {
   font-size: var(--p-small-size);
+}
+
+.p-bold {
+  font-weight: var(--font-weight-medium);
 }
 
 /* cta'er */
@@ -91,27 +100,15 @@ p {
   background-color: var(--color-cta-brown-hover);
 }
 
-/* skal ændres */
-/* index */
-main {
-  padding: 2rem;
-  background-color: #f0f0f0;
-}
-
-h1,
-h2,
-h3 {
-  margin-bottom: 1rem;
-}
-
-/* Header */
+/* header */
 header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #7e8048;
+  background-color: var(--color-header);
   max-height: 90px;
 }
+
 .header-logo svg {
   max-height: 90px;
   max-width: 90px;
@@ -126,28 +123,39 @@ header .cta {
 }
 
 /* Footer */
-
 footer {
-  background-color: #7e8048;
-  color: #fff;
-  padding: 1rem;
+  background-color: var(--color-footer);
+  padding: 2rem 1rem;
+}
+
+footer p {
+  color: var(--text-white);
 }
 
 footer section {
-  padding: 1rem;
+  margin-bottom: 4rem;
 }
 
-.footer-logo {
-  width: 40%;
+footer div {
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 800px) {
   footer {
     display: flex;
     justify-content: space-between;
-    padding: 5rem;
+    padding: 3rem 2rem;
   }
   .footer-logo {
-    width: 70%;
+    max-width: 80%;
+  }
+
+  footer section {
+    margin-bottom: 2rem;
+  }
+
+  footer div {
+    display: flex;
+    gap: 1rem;
   }
 }
