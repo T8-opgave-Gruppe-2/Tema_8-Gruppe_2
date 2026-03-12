@@ -21,8 +21,8 @@
 
   /* textsizes */
   --hero-size: clamp(50px, 2vw, 128px);
-  --h1-size: clamp(34px, 2vw, 60px);
-  --h2-size: clamp(30px, 2vw, 56px);
+  --h1-size: clamp(34px, 5vw, 60px);
+  --h2-size: clamp(30px, 5vw, 56px);
   --h3-size: clamp(24px, 2vw, 40px);
   --p-size: clamp(20px, 2vw, 28px);
   --p-small-size: clamp(16px, 2vw, 22px);
@@ -33,9 +33,10 @@
   --font-family-itim: "Itim", cursive;
   --font-family-encode: "Encode Sans Semi Expanded", sans-serif;
   --font-weight-light: 400;
+  --font-weight-normal: 500;
   --font-weight-medium: 600;
   --font-weight-bold: 800;
-  --font-weight-thick: 900;
+  --font-weight-thick: 1000;
 
   /* cta sizes */
   --padding-cta-small: 0.8rem 1.5rem;
