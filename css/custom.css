@@ -30,13 +30,17 @@
   --font-weight-medium:;
   --font-weight-bold:;
 
+  /* cta sizes */
+  --padding-cta-small: 1rem 1.5rem;
+  --padding-cta-large: 1rem 3.5rem;
+
   /* borderradius */
-  --border-cta-green:;
-  --border-cta-brown:;
-  --border-cta-white:;
+  --border-cta-green: 60px 80px 5px 150px;
+  --border-cta-brown: 80px 80px 50px 50px;
+  --border-cta-white: 40px;
 
   /* dropshadows */
-  --shadow-cta-green:;
-  --shadow-card:;
-  --shadow-card-hover:;
+  --shadow-cta-green: -4px 5px 10px 0 rgb(217, 223, 58, 0.68);
+  --shadow-card: 0 0 7px 4px rgb(215, 205, 194, 0.59);
+  --shadow-card-hover: 0 0 14px 10px rgb(215, 205, 194, 0.59);
 }
