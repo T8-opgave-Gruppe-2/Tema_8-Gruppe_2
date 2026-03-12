@@ -26,7 +26,7 @@
   --h3-size: clamp(24px, 2vw, 40px);
   --p-size: clamp(20px, 2vw, 28px);
   --p-small-size: clamp(16px, 2vw, 22px);
-  --cta-text-size: clamp(40px, 2vw, 64px);
+  --cta-text-size: clamp(16px, 2vw, 20px);
 
   /* textstyles */
   --font-family-hiragino: "hiragino-kaku-gothic-std", sans-serif;
@@ -38,7 +38,7 @@
   --font-weight-thick: 900;
 
   /* cta sizes */
-  --padding-cta-small: 1rem 1.5rem;
+  --padding-cta-small: 0.8rem 1.5rem;
   --padding-cta-large: 1rem 3.5rem;
 
   /* borderradius */
