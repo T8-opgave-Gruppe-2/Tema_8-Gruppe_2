@@ -1,0 +1,44 @@
+#empty-fridge section {
+  place-self: center;
+  max-width: 70vw;
+}
+
+#empty-fridge h1 {
+  place-self: center;
+  margin-bottom: 1.5rem;
+}
+
+/* styling af forms */
+#empty-fridge form {
+  margin: 6rem 4rem;
+}
+
+#empty-fridge fieldset {
+  border: none;
+}
+
+.choose-ingredients {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.choose-ingredients input {
+  display: none;
+}
+
+.choose-ingredients label {
+  cursor: pointer;
+}
+
+.choose-ingredients label:has(input:checked) {
+  background-color: var(--color-cta-green-hover);
+  box-shadow: var(--shadow-cta-green);
+}
+
+.get-recipies button {
+  border: none;
+  place-self: center;
+  min-width: 310px;
+}

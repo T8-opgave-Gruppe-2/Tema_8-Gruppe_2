@@ -6,6 +6,7 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/empty-fridge.css" />
     <title>Front page</title>
   </head>
   <body>
@@ -69,7 +70,7 @@
       </a>
       <a href="empty-fridge.html" class="cta cta-white">Choose ingredients</a>
     </header>
-    <main>
+    <main id="empty-fridge">
       <section>
         <h1>Empty Your Fridge</h1>
         <p>Select the ingredients you have in your fridge and discover the possible recepies you can make.</p>
@@ -80,26 +81,30 @@
             <h2>Choose ingredients</h2>
           </legend>
           <div class="choose-ingredients">
-            <label>
-              <input type="radio" name="ingredients" id="egg" />
+            <label for="egg" class="cta cta-green">
+              <input type="checkbox" name="ingredients" id="egg" />
               + Egg
             </label>
-            <label>
-              <input type="radio" name="ingredients" id="egg2" />
+            <label for="egg2" class="cta cta-green">
+              <input type="checkbox" name="ingredients" id="egg2" />
               + Egg
             </label>
-            <label>
-              <input type="radio" name="ingredients" id="egg3" />
+            <label for="egg3" class="cta cta-green">
+              <input type="checkbox" name="ingredients" id="egg3" />
               + Egg
             </label>
-            <label>
-              <input type="radio" name="ingredients" id="egg4" />
+            <label for="egg4" class="cta cta-green">
+              <input type="checkbox" name="ingredients" id="egg4" />
+              + Egg
+            </label>
+            <label for="egg5" class="cta cta-green">
+              <input type="checkbox" name="ingredients" id="egg5" />
               + Egg
             </label>
           </div>
         </fieldset>
         <div class="get-recipies">
-          <a href="opskrifter.html" class="cta cta-brown">Get recipies</a>
+          <button class="cta cta-brown" id="btn-get-recipies">Get recipies</button>
         </div>
       </form>
     </main>
