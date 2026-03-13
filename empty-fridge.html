@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/empty-fridge.css" />
-    <title>Front page</title>
+    <script src="javascript/empty-fridge.js" defer></script>
+    <title>Empty Your Fridge | Choose Ingredients</title>
   </head>
   <body>
     <header>
@@ -75,35 +76,14 @@
         <h1>Empty Your Fridge</h1>
         <p>Select the ingredients you have in your fridge and discover the possible recepies you can make.</p>
       </section>
-      <form>
+      <form id="ingredients-container">
         <fieldset>
           <legend>
             <h2>Choose ingredients</h2>
           </legend>
-          <div class="choose-ingredients">
-            <label for="egg" class="cta cta-green">
-              <input type="checkbox" name="ingredients" id="egg" />
-              + Egg
-            </label>
-            <label for="egg2" class="cta cta-green">
-              <input type="checkbox" name="ingredients" id="egg2" />
-              + Egg
-            </label>
-            <label for="egg3" class="cta cta-green">
-              <input type="checkbox" name="ingredients" id="egg3" />
-              + Egg
-            </label>
-            <label for="egg4" class="cta cta-green">
-              <input type="checkbox" name="ingredients" id="egg4" />
-              + Egg
-            </label>
-            <label for="egg5" class="cta cta-green">
-              <input type="checkbox" name="ingredients" id="egg5" />
-              + Egg
-            </label>
-          </div>
+          <div id="choose-ingredients"></div>
         </fieldset>
-        <div class="get-recipies">
+        <div id="get-recipies">
           <button class="cta cta-brown" id="btn-get-recipies">Get recipies</button>
         </div>
       </form>

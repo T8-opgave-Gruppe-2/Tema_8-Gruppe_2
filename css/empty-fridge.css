@@ -17,27 +17,30 @@
   border: none;
 }
 
-.choose-ingredients {
+#choose-ingredients {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem 1rem;
   margin: 2rem 0 3rem 0;
 }
 
-.choose-ingredients input {
+#choose-ingredients input {
   display: none;
 }
 
-.choose-ingredients label {
+#choose-ingredients label {
   cursor: pointer;
+  text-align: center;
+  min-width: 230px;
+  min-height: 40px;
 }
 
-.choose-ingredients label:has(input:checked) {
+#choose-ingredients label:has(input:checked) {
   background-color: var(--color-cta-green-hover);
   box-shadow: var(--shadow-cta-green);
 }
 
-.get-recipies button {
+#get-recipies button {
   border: none;
   place-self: center;
   min-width: 310px;
