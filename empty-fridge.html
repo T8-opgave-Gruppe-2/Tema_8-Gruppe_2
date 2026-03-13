@@ -6,7 +6,9 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <title>Front page</title>
+    <link rel="stylesheet" href="css/empty-fridge.css" />
+    <script src="javascript/empty-fridge.js" defer></script>
+    <title>Empty Your Fridge | Choose Ingredients</title>
   </head>
   <body>
     <header>
@@ -69,7 +71,23 @@
       </a>
       <a href="empty-fridge.html" class="cta cta-white">Choose ingredients</a>
     </header>
-    <main></main>
+    <main id="empty-fridge">
+      <section>
+        <h1>Empty Your Fridge</h1>
+        <p>Select the ingredients you have in your fridge and discover the possible recepies you can make.</p>
+      </section>
+      <form id="ingredients-container">
+        <fieldset>
+          <legend>
+            <h2>Choose ingredients</h2>
+          </legend>
+          <div id="choose-ingredients"></div>
+        </fieldset>
+        <div id="get-recipies">
+          <button class="cta cta-brown" id="btn-get-recipies">Get recipies</button>
+        </div>
+      </form>
+    </main>
     <footer>
       <section>
         <p class="p-bold">Contact</p>
