@@ -1,0 +1,90 @@
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* hero sektion */
+.hero-text {
+  color: var(--text-white);
+}
+
+.hero_section h1,
+p {
+  padding: 0.5em;
+}
+.hero_section {
+  display: grid;
+}
+.hero_section img {
+  grid-area: 1/1;
+  max-width: auto;
+  width: 100%;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero_section-text {
+  grid-area: 1/1;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.cta-hero {
+  margin: 1em 0;
+}
+
+.hero_section p {
+  color: var(--text-white);
+}
+
+/* card/sektioner general */
+.card {
+  margin: 3em 1em;
+}
+
+.card a {
+  margin: 1em 0;
+}
+
+/* sektion 1 - custom recepies */
+
+.card img {
+  margin: 2em 0;
+  max-width: 100%;
+}
+
+/* sektion 2 - community*/
+.community_section {
+  text-align: center;
+  background-color: var(--color-secondary-background);
+  margin: 0;
+  padding: 5em;
+}
+
+.community_section p {
+  text-align: center;
+  padding: 1em 0;
+}
+.community_section button {
+  justify-self: center;
+}
+
+@media screen and (min-width: 800px) {
+  .custom_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    gap: 1em;
+  }
+
+  .custom_text {
+    grid-column: 1/2;
+  }
+
+  .custom_section img {
+    max-width: 100%;
+  }
+}
