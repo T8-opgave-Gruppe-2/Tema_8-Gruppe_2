@@ -9,29 +9,39 @@ Skriv derfor jeres fælles retningslinjer for punkterne herunder(tilføj gerne f
 Beslut, hvordan I vil organisere jeres projekt – struktur for mapper og filer.
 
 - Hvordan organiserer I billeder, fonte og andre ressourcer?
+  Vi opdeler vores dokumenter i mapper: CSS, Javascript, fonts, billder også har vi vores html sider.
 - Hvor placerer I boilerplate?(fx CSS- og JavaScript-filer, der bruges på tværs af projektet)
+  Vi har placeret vores css og javascript filer i hver deres mappe.
 - Hvor placerer I HTML, CSS- og JavaScript-filer til fx detaljevisning og listevisning?
+  Vi har placeret vores css og javascript filer i hver deres mappe.
 
 ## Navngivning:
 
 Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktur og undgå forvirring.
 
 - Hvordan navngiver I filnavne? (fx små bogstaver, ingen mellemrum, brug af - eller \_)
+  Vi har navngivet vores filer i småbogstaver, og anvendt bindestreg som mellemrum.
 - Hvordan sikre I at det er til at forstå hvilke HTML-, CSS- og JavaScript-filer der høre sammen?
+  Vi navngiver filer det samme, med undtagelse af endelserne som er indikere om det er en html, css eller javascript.
 
 ## Link til scripts:
 
 - Hvor placerer I script referencer i HTML'en? (fx i <head> med defer attribute, eller sidst i <body>)
+  vi placere vores script i <head> med en defer attribute.
 
 ## Git branches:
 
 - Hvordan navngiver I branches, så alle kan forstår hvem der arbejder i branchen og på hvad?(fx feature-lotte-formular)
+  Når vi brancher, så skriver vi først handling, derefter vores navn.
 
 ## Arbejdsflow:
 
 - Hvordan fordeler I arbejdet, så I undgår at flere arbejder i de samme filer samtidigt?
+  Vi har opdelt så vi en html side, og derved også en css fil hver.
 - Hvordan sikrer I, at commit-beskeder er beskrivende?
+  Vi holde en bideform infomerende tekst der beskriver det overordne.
 - Hvordan kommunikerer i om ændringer i main branchen når feature merges?
+  Så stopper vi processen, giver besked over messenger om siturationen, derved tager vi den sammen når vi mødes.
 
 ## Kode:
 
