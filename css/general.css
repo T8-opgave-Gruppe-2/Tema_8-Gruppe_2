@@ -100,6 +100,10 @@ p {
   background-color: var(--color-cta-brown-hover);
 }
 
+.cta-go-back {
+  color: var(--text-black);
+}
+
 /* header */
 header {
   display: flex;
