@@ -1,18 +1,13 @@
 const productContainer = document.querySelector("main");
 
 const params = new URLSearchParams(window.location.search);
-const id = params.get("ingredients");
-
-// fetch(`https://dummyjson.com/recipes/search?q=${ingredients}`)
-//   .then((response) => response.json())
-//   .then((data) => {
-//     showProducts(data.recipes);
-//   });
+const ingredients = params.get("ingredients").split(",");
 
 fetch("https://dummyjson.com/recipes")
   .then((response) => response.json())
   .then((data) => {
-    showProducts(data.recipes);
+    const filtered = data.recipes.filter((recipe) => ingredients.some((ingredient) => recipe.ingredients.some((ri) => ri.toLowerCase().includes(ingredient.toLowerCase()))));
+    showProducts(filtered);
   });
 
 function showProducts(productsArr) {
