@@ -29,7 +29,7 @@ function showProducts(productsArr) {
             <span><img src="img/graf.svg" alt="Difficulty icon" /> ${recipe.difficulty}</span>
             <span><img src="img/stjerne.svg" alt="Rating icon" /> ${recipe.rating}</span>
           </div>
-          <a href="${recipe.id}">Show recipe</a>
+          <a href="singleview.html?recipe=${recipe.name}">Show recipe</a>
         </div>
       </article>`;
   });
