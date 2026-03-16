@@ -99,11 +99,23 @@
         <img src="img/forside_image_result.webp" alt="krydderier" />
       </section>
 
-      <!-- sektion 2 -community -->
+      <!-- sektion 2 -subscription -->
       <section class="card community_section">
-        <h1>Be Part Of the Community</h1>
-        <p>Sign up for our newsletter and be one of the first to try the newest recepies.</p>
-        <button class="cta cta-brown"><span>Register now</span></button>
+        <h1>Get your weekly mealplan</h1>
+        <p>Subscribe for a weekly mealplan to reduce foodwaste and groceryshopping.</p>
+        <p>Pay monthly for only 99 DKK!</p>
+        <button class="cta cta-brown" popovertarget="popup">Register now</button>
+        <div popover id="popup">
+          <button popovertarget="popup" popovertargetaction="hide" id="close">X</button>
+
+          <form>
+            <legend>
+              <h2>Subscribe today!</h2>
+            </legend>
+            <input type="text" id="sub" placeholder="Enter your email" />
+            <button class="cta cta-green">Sign up</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
