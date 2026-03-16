@@ -1,4 +1,7 @@
-document.querySelector(".cta-go-back").addEventListener("click", goBack);
-function goBack() {
-  history.back();
+const goBackBtn = document.querySelector(".cta-go-back");
+
+if (goBackBtn) {
+  goBackBtn.addEventListener("click", function () {
+    window.history.back();
+  });
 }

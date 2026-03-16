@@ -8,6 +8,13 @@ fetch("https://dummyjson.com/recipes")
   .then((data) => {
     const filtered = data.recipes.filter((recipe) => ingredients.some((ingredient) => recipe.ingredients.some((ri) => ri.toLowerCase().includes(ingredient.toLowerCase()))));
     showProducts(filtered);
+
+    const goBackBtn = document.querySelector(".cta-go-back");
+    if (goBackBtn) {
+      goBackBtn.addEventListener("click", function () {
+        window.history.back();
+      });
+    }
   });
 
 function showProducts(productsArr) {
