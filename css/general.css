@@ -163,3 +163,19 @@ footer div {
     gap: 1rem;
   }
 }
+
+/* go back btn */
+.cta-go-back {
+  border: none;
+  background: none;
+  font-size: var(--p-size);
+  font-family: var(--font-family-encode);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.cta-go-back::before {
+  content: "\27F5 ";
+  font-size: var(--h3-size);
+  padding-right: 0.5rem;
+}

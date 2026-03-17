@@ -97,3 +97,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.cta-go-back {
+  margin-left: 0;
+}
