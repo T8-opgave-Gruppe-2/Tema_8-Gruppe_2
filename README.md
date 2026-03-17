@@ -46,8 +46,11 @@ Beslutte hvordan i vil navngive filer og mapper for at sikre en ensartet struktu
 ## Kode:
 
 - Hvordan skriver i funktioner i JavaScript?(fx med function keyword eller som arrow functions)
+  Vi bruger primært arrow functions (=>) i vores JavaScript. Det ses især i forbindelse med fetch() og callbacks, hvor vi arbejder med .then() til at håndtere data fra API’et. Derudover bruger vi også almindelige funktioner (function) til mere struktureret kode, hvor det giver bedre overblik.
 - Beslut hvilken CSS selector i benyttes til referener i henholdsvis CSS og JavaScript(fx. id'er til JavaScript og Classes til CSS)
+  Classes i CSS til styling af elementer, så de kan genbruges flere steder. Derudover har vi brugt querySelector og querySelectorAll til at arbejde med både classes og ID’er i JavaScript
 - Skal filer have korte forklaringer som kommentarer?
+  Vi har ikke anvendt dette
 
 # Funktionalitet
 
@@ -57,28 +60,47 @@ Dette afsnit skal forklare hvad I konkret har arbejde med, for at udvikle websit
 - Filtrering af produkter baseret på brugerens valg.
 - Dynamisk visning af produkter i HTML.
 
-Brug korte beskrivelser, som i eksemplerne herover
+Henter produktdata fra et API ved brug af fetch().
+Konverterer data til JSON og arbejder videre med det i JavaScript.
+Viser produkter dynamisk i HTML.
+Genererer produktkort automatisk ud fra data.
+Filtrerer produkter baseret på brugerens valg af ingredienser.
+Håndterer klik og brugerinteraktioner som fx en tilbage knap
 
 # API endpoints
 
 Dette afsnit skal liste de endpoints fra API'et i har benyttet:
 
-- (fx. https://dummyjson.com/products)
+- https://dummyjson.com/recipes
+- https://dummyjson.com/recipes?limit=50
 
 # Dokumentation af Funktion
 
 Dette afsnit skal beskrive en funktion I selv har udviklet. Det kunne eksempelvis være en funktion der generere en listen over fx. produkter:
 
 - Beskrivelse: Hvad gør funktionen? Hvordan spiller den sammen med resten af koden?
+  showProducts tager et array af opskrifter og viser dem som kort på siden. Funktionen kaldes efter at opskrifterne er hentet fra API'et og filtreret baseret på de ingredienser, brugeren har valgt. Den øvrige kode henter og filtrerer data, og showProducts sørger for at præsentere resultatet.
 - Parametre: Hvilke input forventes (fx en værdi fra en dropdown eller URL'en)?
+  productsArr hvilket er et array af opskrift-objekter fra dummyjson API'et som allerede er filtreret efter ingredienser.
 - Returnerer: Beskriv, om funktionen returnerer en værdi eller blot manipulerer DOM’en.
+  Den manipulerer udelukkende DOM'en ved at tilføje HTML-indhold til productContainer via innerhtml.
 - Eksempel på brug: Indsæt funktions-koden herunder(der hvor koden er i eksemplet) og vis, hvordan funktionen kaldes:
+  // Funktionens kode:
 
 ```javascript
-//funktionens kode:
-function voresFunktion(sprog) {
-  console.log(`${sprog} syntax highlighting`);
-}
-//hvordan funktionen kaldes:
-voresFunktion("JavaScript");
+function showProducts(productsArr) {
+  productsArr.forEach((recipe) => {
+    productContainer.innerHTML += ``
+  });
+
+// Hvordan funktionen kaldes:
+// (Efter filtrering af data fra API'et)
+const filtered = data.recipes.filter((recipe) =>
+  ingredients.some((ingredient) =>
+    recipe.ingredients.some((ri) =>
+      ri.toLowerCase().includes(ingredient.toLowerCase())
+    )
+  )
+);
+showProducts(filtered);
 ```
